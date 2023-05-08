@@ -3,5 +3,49 @@ $primary: #5265E1;
 $secondary: #FA5959;
 
 
+// Variables del acordeon que cambio 
+$accordion-color: purple;
+$accordion-bg: yellow;
+
+
+
+// Estilos del acordeon de FAQs
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #24a53b;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  overflow: hidden;
+  display: none;
+  overflow: hidden;
+}
+
+
+// cambiar estilo del Dynamic Tabs
+.nav-link.active,
+  .nav-item.show .nav-link {
+    color: red(--#{$prefix}nav-tabs-link-active-color);
+    background-color: purple(--#{$prefix}nav-tabs-link-active-bg);
+    border-color: var(--#{$prefix}nav-tabs-link-active-border-color);
+  }
+
 // import bootstrap origial final to not touch those
 @import"/Users/Susana/Documents/GitHub/Sprint_2/node_modules/bootstrap/scss/bootstrap.scss";
+@import"/Sprint_2/node_modules/bootstrap/scss/navbar";
