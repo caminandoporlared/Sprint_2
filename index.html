@@ -14,27 +14,38 @@
 
   <!--Barra de navegación-->
   <div class="container">
-    <nav class="navbar navbar-reverse">
-    
-              <a class="navbar-brand col-3" href="#">
-                <img src="./Recursos/Imagenes/logo-bookmark.svg" alt="logo">
-              </a>
+            
            
-          <div class="btn-group float-end">
-            <button type="button" class="btn btn-default p-1">FEATURES</button>
-            <button type="button" class="btn btn-default p-1">PRICING</button>
-            <button type="button" class="btn btn-default P-1">CONTACT</button>
-            <button type="button" class="btn btn-danger p-1">LOGIN</button>
-          </div>
-        </div>
-    </nav>
-    <br> <br> <br>
-</div>
 
-  <!--Contenedor principal-->
-  <div class="container">  
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+   
+    <a class="navbar-brand col-3" href="#">
+      <img src="./Recursos/Imagenes/logo-bookmark.svg" alt="logo">
+    </a>
+<div class="col-4"> </div>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <div class="btn-group float-end">
+        <button type="button" class="btn btn-default p-1">FEATURES</button>
+        <button type="button" class="btn btn-default p-1">PRICING</button>
+        <button type="button" class="btn btn-default P-1">CONTACT</button>
+        <button type="button" class="btn btn-danger p-1">LOGIN</button>
+      </div>
+      
+    </div>
+  </div>
+</nav>
+
+
+
+  <!--Contenedor principal
+  <div class="container">  -->
            <div class="row d-flex p-5">
-              <div class="col-md-6 align-items-center">
+              <div class="float-md-end col-md-6">
                     <h1>A Simple Bookmark Manager</h1>
                     <br>
                     <p class="text-muted">A clean and a simple interface to organize your favourite websites.Open new browser tab and
@@ -46,12 +57,12 @@
               </div>
 
 
-              <div class="col-md-6">
+              <div class="float-md-start col-md-6 ">
                     <img class="img-fluid" href="none" src="./Recursos/Imagenes/illustration-hero.svg"
                     alt="illustration-hero">
               </div>
           </div>
-      </div>
+    
 
     <br>
 
@@ -64,7 +75,7 @@
               <br>        
           </div>
 
-</div>
+
 
 
 
@@ -137,7 +148,7 @@
 </div>
 
 
-  
+
 
   <!--DESCARGAR LAS EXTENSIONES-->
   <section>
@@ -263,11 +274,13 @@
     </div>
   </section>
   <br>
+          
+
   <a href="https://www.bookmark.com/" target="_blank"
-    class="d-flex  p-2 col-2   mx-auto text-center justify-content-between justify-content-evenly btn text-center btn-primary">More
+    class="d-flex  p-2 col-3   mx-auto text-center justify-content-between justify-content-evenly btn text-center btn-primary">More
     Info</a>
 
-
+  </div>
   <!--AQUI FOOTER-->
   <footer>
     <div class="container-fluid mt-5 bg-primary">
@@ -283,8 +296,7 @@
           </div>
         </div>
         <form
-          class="row justify-content-center align-items-start text-center mx-4 rounded-2 gx-2 needs-validation mb-lg-4"
-          novalidate>
+          class="row justify-content-center align-items-start text-center mx-4 rounded-2 gx-2 needs-validation mb-lg-4">
           <div class="col-12 col-lg-3">
             <input type="email" class="form-control p-2" id="user-email" aria-describedby="emailHelp"
               placeholder="Enter your e-mail address" required />
@@ -298,6 +310,8 @@
             </button>
           </div>
         </form>
+
+
       </div>
     </div>
 
